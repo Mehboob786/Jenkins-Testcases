@@ -114,23 +114,22 @@
                     </execution>
                 </executions>
             </plugin>
-
- <plugin>
-                <groupId>io.qameta.allure</groupId>
-                <artifactId>allure-maven</artifactId>
-                <version>2.10.0</version>
-                <configuration>
-                    <reportVersion>2.13.8</reportVersion>
-                </configuration>
-                <executions>
-                    <execution>
-                        <phase>test</phase>
-                        <goals>
-                            <goal>report</goal>
-                        </goals>
-                    </execution>
-                </executions>
-            </plugin>
+<plugin>
+    <groupId>io.qameta.allure</groupId>
+    <artifactId>allure-maven</artifactId>
+    <version>2.10.0</version> <!-- Ensure this is the latest or required version of the allure-maven plugin -->
+    <configuration>
+        <reportVersion>2.29.0</reportVersion> <!-- Updated to match your installed Allure version -->
+    </configuration>
+    <executions>
+        <execution>
+            <phase>test</phase>
+            <goals>
+                <goal>report</goal>
+            </goals>
+        </execution>
+    </executions>
+</plugin>
 
 
 
